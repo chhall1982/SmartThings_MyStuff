@@ -52,7 +52,7 @@ def initialize() {
 
 def doorOpenedHandler(evt) {
 	log.debug "doorOpenedHandler called: $evt"
-    runIn(minutes * 60, checkDoor)
+    runIn((minutes * 60) + 10, checkDoor)
 }
 
 def checkDoor() {
